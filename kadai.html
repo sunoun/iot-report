@@ -1,0 +1,131 @@
+<div style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: auto;">
+
+  <h3 style="border-bottom: 2px solid #0056b3; padding-bottom: 5px; color: #0056b3;">1. ヒューマンデジタルツインが成長を牽引する市場と社会的背景
+  </h3>
+  <table border="1" cellpadding="12" cellspacing="0"
+    style="width:100%; border-collapse: collapse; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <tr>
+      <th style="background-color: #e8f4f8; width: 25%; text-align: center;">市場領域</th>
+      <td><strong>ヘルスケア・スポーツ市場</strong> および <strong>製造業の労働安全市場</strong></td>
+    </tr>
+    <tr>
+      <th style="background-color: #e8f4f8; text-align: center;">社会的背景</th>
+      <td>
+        少子高齢化による慢性的な労働力不足と、熟練技術者の引退に伴う「技能の喪失」が深刻化しています。また、人生100年時代に向けた健康寿命の延伸や、リモート環境でも質の高い技術指導や安全管理を受けたいという社会的要請が急速に高まっています。
+      </td>
+    </tr>
+  </table>
+
+  <h3 style="border-bottom: 2px solid #0056b3; padding-bottom: 5px; color: #0056b3;">2.
+    ビジネスモデル立案：次世代AIフォーム解析＆怪我予防プラットフォーム「Motion-Twin」</h3>
+  <p style="background-color: #fff9e6; padding: 15px; border-left: 5px solid #ffc107; border-radius: 4px;">
+    <strong>■ 概要</strong><br>
+    スマートフォンやウェアラブルデバイスから利用者の3D骨格・生体データを取得し、サイバー空間に「自分自身のデジタルツイン」を構築。日常のスポーツ活動や労働環境における怪我のリスクを未然に防ぐBtoBtoCモデルのサービスです。
+  </p>
+
+  <h4 style="background-color: #0056b3; color: #fff; padding: 8px 15px; border-radius: 4px; display: inline-block;">■
+    システム構成と技術実装イメージ（図解）</h4>
+  <p>安全かつリアルタイムなフィードバックを実現するため、エッジとクラウドを組み合わせたセキュアな分散アーキテクチャを採用します。</p>
+
+  <div
+    style="display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px; text-align: center; flex-wrap: wrap; gap: 10px;">
+    <div
+      style="flex: 1; min-width: 200px; border: 2px solid #17a2b8; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <strong style="color: #17a2b8; font-size: 1.1em;">① データ収集層<br>(IoT / Edge)</strong><br>
+      <hr style="border: 0; border-top: 1px dashed #ccc; margin: 10px 0;">
+      <span style="font-size: 0.9em; color: #555;">LiDAR / カメラ /
+        ウェアラブル<br><strong>C++等を活用した高速エッジ処理</strong>により、関節の微細な動きを遅延なく取得。</span>
+    </div>
+    <div style="font-size: 24px; color: #aaa;">➔</div>
+    <div
+      style="flex: 1; min-width: 200px; border: 2px solid #007bff; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <strong style="color: #007bff; font-size: 1.1em;">② データ解析層<br>(Cloud / AI / Security)</strong><br>
+      <hr style="border: 0; border-top: 1px dashed #ccc; margin: 10px 0;">
+      <span style="font-size: 0.9em; color: #555;"><strong>PythonベースのDeep
+          Learning</strong>による高精度な骨格解析。<br>強固な暗号化による個人情報保護。</span>
+    </div>
+    <div style="font-size: 24px; color: #aaa;">➔</div>
+    <div
+      style="flex: 1; min-width: 200px; border: 2px solid #ffc107; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <strong style="color: #ffc107; font-size: 1.1em;">③ フィードバック層<br>(Application)</strong><br>
+      <hr style="border: 0; border-top: 1px dashed #ccc; margin: 10px 0;">
+      <span style="font-size: 0.9em; color: #555;">スマホアプリ / ARグラス<br>局所的な関節負荷などを数値化し、怪我のリスクアラートを視覚的に提示。</span>
+    </div>
+  </div>
+
+  <h4 style="background-color: #0056b3; color: #fff; padding: 8px 15px; border-radius: 4px; display: inline-block;">■
+    既存サービスとの優位性（競合比較表）</h4>
+  <table border="1" cellpadding="10" cellspacing="0"
+    style="width:100%; border-collapse: collapse; margin-bottom: 25px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <tr style="background-color: #e8f4f8;">
+      <th>比較項目</th>
+      <th>本サービス (Motion-Twin)</th>
+      <th>従来の映像解析アプリ</th>
+      <th>専用モーションキャプチャ</th>
+    </tr>
+    <tr>
+      <th style="background-color: #f9f9f9;">機材の準備</th>
+      <td><span style="color: red; font-weight: bold;">不要（スマホ/市販ARのみ）</span></td>
+      <td>不要</td>
+      <td>必要（専用スーツ・マーカー）</td>
+    </tr>
+    <tr>
+      <th style="background-color: #f9f9f9;">解析のリアルタイム性</th>
+      <td><span style="color: red; font-weight: bold;">◎（エッジ連携で即時反映）</span></td>
+      <td>△（録画後の事後解析）</td>
+      <td>◎</td>
+    </tr>
+    <tr>
+      <th style="background-color: #f9f9f9;">導入コスト</th>
+      <td><span style="color: red; font-weight: bold;">低（サブスクリプション）</span></td>
+      <td>無料〜低</td>
+      <td>高（数百万円規模）</td>
+    </tr>
+  </table>
+
+  <h4 style="background-color: #0056b3; color: #fff; padding: 8px 15px; border-radius: 4px; display: inline-block;">■
+    デジタルツインの社会実装事例（参考動画）</h4>
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 25px;">
+    <div style="flex: 1; min-width: 300px;">
+      <p style="font-weight: bold; margin-bottom: 8px; color: #0056b3;">▼ スポーツ領域の事例（富士通3DセンシングAI）</p>
+      <div
+        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <iframe src="https://www.youtube.com/embed/cqJmF5X0E14" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+    <div style="flex: 1; min-width: 300px;">
+      <p style="font-weight: bold; margin-bottom: 8px; color: #0056b3;">▼ 製造業・産業領域の事例（デジタルツイン）</p>
+      <div
+        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <iframe src="https://www.youtube.com/embed/5a2TnbBq8Lg" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="background-color: #0056b3; color: #fff; padding: 8px 15px; border-radius: 4px; display: inline-block;">■
+    ビジネスモデルキャンバス（概略）</h4>
+  <table border="1" cellpadding="12" cellspacing="0"
+    style="width:100%; border-collapse: collapse; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <tr>
+      <th style="background-color: #f9f9f9; width: 30%;">顧客セグメント (CS)</th>
+      <td>
+        <ul>
+          <li style="margin-bottom: 4px;"><strong>BtoC:</strong> アスリート、スポーツ愛好家、リハビリ患者</li>
+          <li><strong>BtoB:</strong> 製造業（労働災害防止）、プロスポーツチーム、保険会社</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th style="background-color: #f9f9f9;">提供価値 (VP)</th>
+      <td>怪我の未然防止、技能習得の圧倒的時短、データに基づく高精度なリモートコーチングの実現</td>
+    </tr>
+    <tr>
+      <th style="background-color: #f9f9f9;">収益の流れ (RS)</th>
+      <td>個人向け月額サブスクリプション、法人向けSaaSライセンス費、匿名化された動作データの研究機関・保険会社へのデータ提供料</td>
+    </tr>
+  </table>
+</div>
